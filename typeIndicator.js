@@ -131,7 +131,7 @@
    type = 'blocklyTypeHighlightedConnectionPath';
   var steps;
   if (this.type == Blockly.INPUT_VALUE || this.type == Blockly.OUTPUT_VALUE) {
-   steps = 'm 0,0 ' + Blockly.BlockSvg.getConnectorPath( this ) + 'v 5';
+   steps = 'm 0,0 ' + Blockly.BlockSvg.getDownPath(this) + 'v 5';
   } else {
    if (this.sourceBlock_.RTL) {
     steps = 'm 20,0 h -5 ' + Blockly.BlockSvg.NOTCH_PATH_RIGHT + ' h -5';
